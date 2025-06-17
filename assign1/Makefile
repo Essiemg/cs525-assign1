@@ -7,10 +7,10 @@ EXECUTABLE = test_assign1
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
-    $(CC) $(OBJECTS) -o $@
+	$(CC) $(OBJECTS) -o $@
 
 .c.o:
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-    rm -f $(OBJECTS) $(EXECUTABLE)
+	rm -f $(OBJECTS) $(EXECUTABLE)
